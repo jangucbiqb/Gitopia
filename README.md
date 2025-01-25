@@ -208,3 +208,4 @@ Add feature overview
 Add system requirements
 Add installation instructions
 Add quick start guide
+Document profiling setup
