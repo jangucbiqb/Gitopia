@@ -209,3 +209,4 @@ Add system requirements
 Add installation instructions
 Add quick start guide
 Document profiling setup
+Add performance metric examples
