@@ -212,3 +212,4 @@ Document profiling setup
 Add performance metric examples
 Add bottleneck analysis guide
 Add visualization options
+Add optimization recommendations
