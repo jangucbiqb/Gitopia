@@ -214,3 +214,4 @@ Add bottleneck analysis guide
 Add visualization options
 Add optimization recommendations
 Add contributing guidelines
+Add code of conduct
