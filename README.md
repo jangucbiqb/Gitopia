@@ -215,3 +215,4 @@ Add visualization options
 Add optimization recommendations
 Add contributing guidelines
 Add code of conduct
+Add FAQ for users
