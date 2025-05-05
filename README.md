@@ -9,9 +9,11 @@ Recommended
 Rent On Hetzner | Rent On OVH
 Dependencies Installation
 
-# Install dependencies for building from source
+**Install dependencies for building from source**
+```
 sudo apt update
 sudo apt install -y curl git jq lz4 build-essential
+```
 
 # Install Go
 sudo rm -rf /usr/local/go
