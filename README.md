@@ -15,12 +15,14 @@ sudo apt update
 sudo apt install -y curl git jq lz4 build-essential
 ```
 
-# Install Go
+**Install Go**
+```
 sudo rm -rf /usr/local/go
 curl -L https://go.dev/dl/go1.22.7.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 Node Installation
+```
 
 Node Name
 
