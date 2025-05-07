@@ -24,17 +24,13 @@ source .profile
 Node Installation
 ```
 
-Node Name
-
-Your Node Name
-Port prefix
-
-113
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf gitopia
 git clone https://github.com/gitopia/gitopia
 cd gitopia
 git checkout v5.1.0
+```
 
 # Build binary
 make install
