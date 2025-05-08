@@ -32,9 +32,10 @@ cd gitopia
 git checkout v5.1.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
-
+```
 # Prepare cosmovisor directories
 mkdir -p $HOME/.gitopia/cosmovisor/genesis/bin
 ln -s $HOME/.gitopia/cosmovisor/genesis $HOME/.gitopia/cosmovisor/current -f
