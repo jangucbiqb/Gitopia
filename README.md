@@ -36,9 +36,11 @@ git checkout v5.1.0
 ```
 make install
 ```
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.gitopia/cosmovisor/genesis/bin
 ln -s $HOME/.gitopia/cosmovisor/genesis $HOME/.gitopia/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which gitopiad) $HOME/.gitopia/cosmovisor/genesis/bin
