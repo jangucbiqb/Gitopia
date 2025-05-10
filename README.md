@@ -42,8 +42,10 @@ mkdir -p $HOME/.gitopia/cosmovisor/genesis/bin
 ln -s $HOME/.gitopia/cosmovisor/genesis $HOME/.gitopia/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which gitopiad) $HOME/.gitopia/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 gitopiad config chain-id gitopia
