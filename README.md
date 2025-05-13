@@ -59,9 +59,11 @@ gitopiad config node tcp://localhost:11357
 gitopiad init "Your Node Name" --chain-id gitopia
 ```
 
-# Download genesis and addrbook files
+**Download genesis and addrbook files**
+```
 curl -L https://snapshots.nodejumper.io/gitopia/genesis.json > $HOME/.gitopia/config/genesis.json
 curl -L https://snapshots.nodejumper.io/gitopia/addrbook.json > $HOME/.gitopia/config/addrbook.json
+```
 
 # Set seeds
 sed -i -e 's|^seeds *=.*|seeds = "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:11356,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:11356,ebc272824924ea1a27ea3183dd0b9ba713494f83@gitopia-mainnet-seed.autostake.com,187425bc3739daaef8cb1d7cf47d655117396dbe@seed-gitopia.ibs.team:16660,9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152@gitopia-seed.mzonder.com:11056,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@gitopia.rpc.kjnodes.com:14159,f280239045928af4e1b289d9df4059b7f941777b@seed-node.mms.team:35656,6d41d36d54abd868c4cdaf5b956ac047327bff67@seeds-3.anode.team:10260,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,08bc9afd0cac4ae6cf8f1877920b0cc7e58a6f42@seeds.tendermint.roomit.xyz:40001"|' $HOME/.gitopia/config/config.toml
