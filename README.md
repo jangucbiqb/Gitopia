@@ -87,8 +87,10 @@ sed -i \
   $HOME/.gitopia/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.gitopia/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:11317%; s%:8080%:11380%; s%:9090%:11390%; s%:9091%:11391%; s%:8545%:11345%; s%:8546%:11346%; s%:6065%:11365%" $HOME/.gitopia/config/app.toml
