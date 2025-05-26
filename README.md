@@ -92,9 +92,11 @@ sed -i \
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.gitopia/config/config.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:11317%; s%:8080%:11380%; s%:9090%:11390%; s%:9091%:11391%; s%:8545%:11345%; s%:8546%:11346%; s%:6065%:11365%" $HOME/.gitopia/config/app.toml
 sed -i -e "s%:26658%:11358%; s%:26657%:11357%; s%:6060%:11360%; s%:26656%:11356%; s%:26660%:11361%" $HOME/.gitopia/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/gitopia/gitopia_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.gitopia"
