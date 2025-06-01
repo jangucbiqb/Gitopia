@@ -108,7 +108,8 @@ curl "https://snapshots.nodejumper.io/gitopia/gitopia_latest.tar.lz4" | lz4 -dc 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/gitopia.service > /dev/null << EOF
 [Unit]
 Description=Gitopia node service
@@ -129,6 +130,8 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable gitopia.service
+```
+
 
 # Start the service and check the logs
 sudo systemctl start gitopia.service
