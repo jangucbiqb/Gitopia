@@ -144,8 +144,11 @@ Secure Server Setup (Optional)
 ssh-keygen -t rsa
 ```
 
-# save the output, we'll use it later on instead of YOUR_PUBLIC_SSH_KEY
+**save the output, we'll use it later on instead of YOUR_PUBLIC_SSH_KEY**
+```
 cat ~/.ssh/id_rsa.pub
+```
+
 # upgrade system packages
 sudo apt update
 sudo apt upgrade -y
