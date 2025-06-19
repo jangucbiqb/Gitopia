@@ -160,13 +160,15 @@ sudo apt upgrade -y
 sudo adduser admin --disabled-password -q
 ```
 
-# upload public ssh key, replace YOUR_PUBLIC_SSH_KEY with the key above
+**upload public ssh key, replace YOUR_PUBLIC_SSH_KEY with the key above**
+```
 mkdir /home/admin/.ssh
 echo "YOUR_PUBLIC_SSH_KEY" >> /home/admin/.ssh/authorized_keys
 sudo chown admin: /home/admin/.ssh
 sudo chown admin: /home/admin/.ssh/authorized_keys
 
 echo "admin ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+```
 
 # disable root login, disable password authentication, use ssh keys only
 sudo sed -i 's|^PermitRootLogin .*|PermitRootLogin no|' /etc/ssh/sshd_config
