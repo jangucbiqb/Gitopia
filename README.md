@@ -181,8 +181,10 @@ sudo sed -i 's|^#PubkeyAuthentication .*|PubkeyAuthentication yes|' /etc/ssh/ssh
 sudo systemctl restart sshd
 ```
 
-# install fail2ban
+**install fail2ban**
+```
 sudo apt install -y fail2ban
+```
 
 # install and configure firewall
 sudo apt install -y ufw
